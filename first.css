@@ -120,7 +120,7 @@ button:hover::after {
     align-items: center;
     text-align: center;
     color: #c3c5c7;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/icefire.png');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('images/icefire.png');
     background-size: cover;
     background-position: center;
 }
@@ -173,7 +173,7 @@ button:hover::after {
 }
 .pics {
     padding: 100px 60px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/icefire2.png');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('images/icefire2.png');
     background-size: cover;
     background-position: center;
 }
@@ -245,7 +245,7 @@ button:hover::after {
     justify-content: center;  
     align-items: center;          
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/ironthrone.jpg');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('images/ironthrone.jpg');
     background-size: cover;
     background-position: center;
 }   
@@ -348,11 +348,11 @@ footer p {
 
 @font-face {
     font-family: "MyFont";
-    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
+    src: url(Cinzel/Cinzel-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: "GOT";
-    src: url(/game-of-thrones/Game\ of\ Thrones.ttf);
+    src: url(game-of-thrones/Game\ of\ Thrones.ttf);
 }
 @media (max-width: 968px) {
 .burger {
