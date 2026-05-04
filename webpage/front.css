@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "MyFont", 'Georgia', serif;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    color: #e8e6e3;
+    opacity: 1;
+}
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    color: #8b959e;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(139, 149, 158, 0.2);
+}
+nav{
+    max-width: 1500px;
+    max-height: fit-content;
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(139, 149, 158, 0.2);
+    border-radius: 8px;
+    padding: 12px 0;
+    min-width: 180px;
+    margin-top: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.dropdown .menu.active {
+    display: block;
+}
+.dropdown .menu li {
+    padding: 0;
+}
+.dropdown .menu a {
+    display: block;
+    padding: 12px 24px;
+    color: #8b959e;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown .menu a:hover {
+    background: rgba(139, 149, 158, 0.1);
+    color: #e8e6e3;
+}
+
+.dropdown .menu a::after {
+    display: none;
+}
+.links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.links li{
+    color: #8b959e;
+}
+.links a{
+    position: relative;
+}
+a{
+    color: #8b959e;
+    text-decoration: none;
+}
+.links a::after{
+    content: '';
+    background: #8b959e;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+.links a:hover::after {
+    width: 100%;
+}
+nav a:visited {
+  color: #8b959e;
+}
+.burger {
+    display: none;
+    font-size: 28px;
+    color: #8b959e;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.burger:hover {
+    color: #e8e6e3;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 500;
+    color: #8b959e;
+    letter-spacing: 2px;
+}
+.logo2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #8b959e;
+    letter-spacing: 2px;
+}
+.intro{
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-family: "GOT", serif;
+    letter-spacing: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),url('/images/ice.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#grey-wind {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/greywind.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#lady {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/lady.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#nymeria {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/nymeria.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#summer {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/summer.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#shaggydog {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/shaggydog.jpg');
+    background-size: cover;
+    background-position: right;
+}
+#ghost {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/ghost.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+#drogon {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/DROGON1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#rhaegal {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/RHAEGAL.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#viserion {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/VISERION.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#about{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/icefire.png');
+    background-size: cover;
+    background-position: center;
+}
+.wolf, .dragon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 60px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(139, 149, 158, 0.1);
+    flex-direction: column;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1400px;
+}
+.content_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    gap: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+.divider {
+    font-family: "GOT", serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(20,0,0,0.85)), url('/images/fire.png');
+    background-size: cover;
+    background-position: center;
+}
+.image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.image:hover {
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
+}
+.wolfinfo {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+.wolfinfo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #e8e6e3;
+}
+.wolfinfo .owner {
+    font-size: 1.1rem;
+    color: #8b959e;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+.wolfinfo .description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #c5c5c5;
+}
+.intro, .dragon, .divider, #grey-wind, #lady, #nymeria, #summer, #shaggydog, #ghost, #drogon, #rhaegal, #viserion {
+    background-attachment: fixed;
+}
+footer {
+    background: #0a0a0a;
+    padding: 48px 32px;
+    text-align: center;
+    border-top: 1px solid rgba(139, 149, 158, 0.2);
+}
+footer p {
+    color: #8b959e;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+@font-face {
+    font-family: "MyFont";
+    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "GOT";
+    src: url(/game-of-thrones/Game\ of\ Thrones.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 1400px) {
+    .image {
+        width: 250px;
+        height: 300px;
+    }
+    .content {
+        gap: 20px;
+    }
+    .description{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 968px) {
+    .image {
+        width: 250px;
+        height: 300px;
+    }
+    .content {
+        gap: 20px;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .burger {
+        display: block;
+    }
+    .links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(30px);
+        width: 250px;
+        border-left: 1px solid rgba(139, 149, 158, 0.2);
+        border-bottom: 1px solid rgba(139, 149, 158, 0.2);
+        border-radius: 0 0 0 8px;
+        padding: 20px;
+        gap: 20px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    .links.active {
+        right: 0;
+    }
+    .dropdown .menu {
+        position: static;
+        display: none;
+        margin-top: 10px;
+        box-shadow: none;
+        border: none;
+        padding-left: 15px;
+    }
+    .dropdown .menu.active {
+        display: block;
+    }
+    .content {
+        align-items: center;
+    }
+    
+    .image {
+        order: -1;
+    }
+    
+    .wolfinfo {
+        order: 1;
+        text-align: center;
+    }
+}
+@media (max-width: 640px) {
+    .content {
+        align-items: center;
+    }
+    .image {
+        order: -1;
+    }
+    .wolfinfo {
+        order: 1;
+        text-align: center;
+    }
+    .intro {
+        font-size: 20px;
+    }
+    .divider {
+        font-size: 20px;
+    }
+    .wolf, .dragon {
+        padding: 80px 30px;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    .wolfinfo {
+        max-width: 100%;
+        text-align: center;
+    }
+    nav {
+        padding: 10px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .logo2 {
+        font-size: 12px;
+    }
+    .links {
+        top: 60px;
+        width: 200px;
+        font-size: 14px;
+    }
+}

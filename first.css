@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "MyFont", 'Georgia' , serif;
+    background-size:cover;
+    background-position: center;
+    overflow-x: hidden;
+    color: #e8e6e3;
+    opacity: 1;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    color: #8b959e;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(139, 149, 158, 0.2);
+}
+nav{
+    max-width: 1500px;
+    max-height: fit-content;
+    margin: 0 auto;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 500;
+    color: #8b959e;
+    letter-spacing: 2px;
+}
+.logo2{
+    font-size: 15px;
+    font-weight: 400;
+    color: #8b959e;
+    letter-spacing: 2px;
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.links li{
+    color: #8b959e;
+}
+.links a{
+    position: relative;
+}
+a{
+    color: #8b959e;
+    text-decoration: none;
+}
+.links a::after{
+    content: '';
+    background: #8b959e;
+    height: 2px;
+    left: 0;
+    width: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+.links a:hover::after {
+    width: 100%;
+}
+nav a:visited {
+  color: #8b959e;
+}
+button{
+    font-family: "MyFont";
+    font-size: 25px;
+    padding: 15px;
+    color: #e8e6e3;
+    background-color: transparent;
+    border-radius: 10px;
+    border:none;
+    margin-top: 40px;
+    position: relative;
+}
+button::after{
+    content: '';
+    background: #8b959e;
+    height: 2px;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+button::before{
+    content: '';
+    background: #8b959e;
+    height: 2px;
+    left: 0;
+    width: 0;
+    top: 5px;
+    position: absolute;
+    transition: width 0.3s ease;
+}
+button a:visited{
+    color: #e8e6e3;
+}
+button:hover::before {
+    width: 100%;
+}
+button:hover::after {
+    width: 100%;
+}
+.land{
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c3c5c7;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/icefire.png');
+    background-size: cover;
+    background-position: center;
+}
+.content h1{
+    font-size: 70px;
+}
+.content p{
+    color: #8b959e;
+    font-size: 30px;
+}
+.content h1{
+    padding: 30px;
+}
+.content p{
+    padding: 20px;
+}
+
+.aboutcont h1{
+    font-family: "GOT";
+    margin: 40px;
+}
+.aboutcont p{
+    margin: 0px 70px;
+    font-size: 20px;
+    text-align: center;
+}
+.wolves{
+    font-family: "GOT";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #e8e6e3;
+}
+.dragon{
+    font-family: "GOT";
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: #e8e6e3;
+}
+.wolves,
+.wolves *{
+    cursor: url('/images/wolf.png'), none;
+}
+.dragon,
+.dragon *{
+    cursor: url('/images/dragon.png'), none;
+}
+.pics {
+    padding: 100px 60px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/icefire2.png');
+    background-size: cover;
+    background-position: center;
+}
+.picshead{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.picshead h3{
+    color: #8b959e;
+    font-size: 13px;
+    letter-spacing: 6px;
+    margin-bottom: 12px;
+}
+.picshead h1 {
+    font-family: "GOT", serif;
+    font-size: 52px;
+    color: #e8e6e3;
+    margin-bottom: 14px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.container p{
+    text-shadow: #000000 0 2px 4px;
+}
+.picsitem{
+    max-width: 30%;
+    border: 1px solid rgba(139, 149, 158, 0.2);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.picsitem p {
+    bottom: 12px;
+    left: 16px;
+    font-family: "GOT";
+    font-size: 14px;
+    color: #e8e6e3;
+    margin: 0;
+}
+.shaggydog p {
+    color: #000000;
+
+}
+.shaggydog {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+}
+.picsitem img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+    border-radius: 20px;
+}
+.picsitem:hover img {
+    transform: scale(1.04);
+}
+.title{
+    min-height: 740px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;          
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url('/images/ironthrone.jpg');
+    background-size: cover;
+    background-position: center;
+}   
+.pics, .land, .title {
+    background-attachment: fixed;
+}
+footer{
+    background: #0a0a0a;
+    padding: 48px 32px;
+    text-align: center;
+    border-top: 1px solid rgba(139, 149, 158, 0.2);
+}
+footer p {
+    color: #8b959e;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.foot{
+    margin-top: 16px; 
+    font-size: 13.6px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #8b959e;
+    z-index: 101;
+    transition: color 0.3s ease;
+}
+
+.burger:hover {
+    color: #e8e6e3;
+}
+
+.picsitem img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.picsitem:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.4);
+}
+
+.picsitem img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    border-radius: 16px;
+}
+
+.picsitem:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.35);
+}
+
+.picsitem {
+    overflow: hidden;
+    border-radius: 16px;
+}
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.2), transparent);
+    opacity: 0;
+    transition: all 0.35s ease;
+}
+
+.picsitem:hover .card-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-name {
+    font-family: "GOT";
+    font-size: 16px;
+    letter-spacing: 2px; 
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.card-house {
+    font-family: "MyFont";
+    font-size: 12px;
+    color: #8b959e;
+    margin-bottom: 6px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.card-desc {
+    font-family: "MyFont";
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #c3c5c7;
+    line-height: 1.4;
+    padding: 5px;
+}
+
+@font-face {
+    font-family: "MyFont";
+    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "GOT";
+    src: url(/game-of-thrones/Game\ of\ Thrones.ttf);
+}
+@media (max-width: 968px) {
+.burger {
+    display: flex ;
+}
+.links {
+    position: fixed;
+    right: -300px;
+    top: 100px;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.98);
+    width: 300px;
+    text-align: center;
+    transition: right 0.3s ease;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+    gap: 0;
+    border-left: 1px solid rgba(139, 149, 158, 0.2);
+    overflow-y: auto;
+    z-index: 99;
+    padding-top: 0;
+    padding-left: 0;
+    height: fit-content; 
+    border-top: 1px solid rgba(139, 149, 158, 0.2);
+}
+.links.active {
+    right: 0;
+}
+.links li {
+    font-size: 15px;
+    padding: 19px 0;
+    border-bottom: 1px solid rgba(139, 149, 158, 0.1);
+}
+button{
+    font-size: 20px;
+}
+.content h1 {
+    font-size: 50px;
+}
+.content p {
+    font-size: 20px;
+}
+.picsitem {
+    max-width: 45%;
+}
+.picsitem img{
+    height: 220px;
+}
+.aboutcont h1{
+    font-size: 30px;
+}
+.aboutcont p{
+    font-size: 15px;
+}
+footer{
+    padding: 20px 15px;
+}
+footer p {
+    font-size: 13px;
+}
+}
+
+@media (max-width: 640px) {
+.content h1 {
+    font-size: 40px;
+}
+.content p {
+    font-size: 18px;
+}
+.links {
+    font-size: 10px;
+}
+.picsitem{
+    max-width: 100%;
+}
+.picsitem img{
+    height: 280px;
+}
+.aboutcont h1{
+    font-size: 20px;
+}
+.aboutcont p{
+    font-size: 15px;
+}
+footer{
+    padding: 15px 10px;
+}
+footer p {
+    font-size: 12px;
+}
+}
+html {
+    scroll-behavior: smooth;
+}
