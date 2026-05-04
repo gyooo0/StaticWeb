@@ -165,11 +165,11 @@ button:hover::after {
 }
 .wolves,
 .wolves *{
-    cursor: url('/images/wolf.png'), none;
+    cursor: url('images/wolf.png'), none;
 }
 .dragon,
 .dragon *{
-    cursor: url('/images/dragon.png'), none;
+    cursor: url('images/dragon.png'), none;
 }
 .pics {
     padding: 100px 60px;
