@@ -133,58 +133,58 @@ nav a:visited {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),url('/images/ice.png');
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),url('../images/ice.png');
     background-size: cover;
     background-position: center;
 }
 
 #grey-wind {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/greywind.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/greywind.jpeg');
     background-size: cover;
     background-position: center;
 }
 #lady {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/lady.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/lady.jpeg');
     background-size: cover;
     background-position: center;
 }
 #nymeria {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/nymeria.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/nymeria.jpeg');
     background-size: cover;
     background-position: center;
 }
 #summer {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/summer.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/summer.jpeg');
     background-size: cover;
     background-position: center;
 }
 #shaggydog {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/shaggydog.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/shaggydog.jpg');
     background-size: cover;
     background-position: right;
 }
 #ghost {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/ghost.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/ghost.jpeg');
     background-size: cover;
     background-position: center;
 }
 #drogon {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/DROGON1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/DROGON1.jpg');
     background-size: cover;
     background-position: center;
 }
 #rhaegal {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/RHAEGAL.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/RHAEGAL.jpg');
     background-size: cover;
     background-position: center;
 }
 #viserion {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/VISERION.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/VISERION.jpg');
     background-size: cover;
     background-position: center;
 }
 #about{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/icefire.png');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/icefire.png');
     background-size: cover;
     background-position: center;
 }
@@ -227,7 +227,7 @@ nav a:visited {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(20,0,0,0.85)), url('/images/fire.png');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(20,0,0,0.85)), url('../images/fire.png');
     background-size: cover;
     background-position: center;
 }
@@ -279,11 +279,11 @@ footer p {
 }
 @font-face {
     font-family: "MyFont";
-    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
+    src: url(../Cinzel/Cinzel-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: "GOT";
-    src: url(/game-of-thrones/Game\ of\ Thrones.ttf);
+    src: url(../game-of-thrones/Game\ of\ Thrones.ttf);
 }
 
 html{
