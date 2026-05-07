@@ -19,6 +19,7 @@ header {
     backdrop-filter: blur(30px);
     border-bottom: 1px solid rgba(139, 149, 158, 0.2);
 }
+/*navigation*/
 nav{
     max-width: 1500px;
     max-height: fit-content;
@@ -28,7 +29,6 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-
 .dropdown {
     position: relative;
 }
@@ -59,15 +59,14 @@ nav{
     color: #8b959e;
     transition: background 0.2s ease, color 0.2s ease;
 }
-
 .dropdown .menu a:hover {
     background: rgba(139, 149, 158, 0.1);
     color: #e8e6e3;
 }
-
 .dropdown .menu a::after {
     display: none;
 }
+/*links design*/
 .links {
     list-style: none;
     display: flex;
@@ -99,6 +98,7 @@ a{
 nav a:visited {
   color: #8b959e;
 }
+/*burger menu*/
 .burger {
     display: none;
     font-size: 28px;
@@ -122,6 +122,7 @@ nav a:visited {
     color: #8b959e;
     letter-spacing: 2px;
 }
+/*dire wolves introduction*/
 .intro{
     height: 100vh;
     display: flex;
@@ -133,61 +134,62 @@ nav a:visited {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),url('../images/ice.png');
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),url('/images/ice.png');
     background-size: cover;
     background-position: center;
 }
-
+/*background images for each wolf section*/
 #grey-wind {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/greywind.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/greywind.jpeg');
     background-size: cover;
     background-position: center;
 }
 #lady {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/lady.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/lady.jpeg');
     background-size: cover;
     background-position: center;
 }
 #nymeria {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/nymeria.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/nymeria.jpeg');
     background-size: cover;
     background-position: center;
 }
 #summer {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/summer.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/summer.jpeg');
     background-size: cover;
     background-position: center;
 }
 #shaggydog {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/shaggydog.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/shaggydog.jpg');
     background-size: cover;
     background-position: right;
 }
 #ghost {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/ghost.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/ghost.jpeg');
     background-size: cover;
     background-position: center;
 }
 #drogon {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/DROGON1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/DROGON1.jpg');
     background-size: cover;
     background-position: center;
 }
 #rhaegal {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/RHAEGAL.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/RHAEGAL.jpg');
     background-size: cover;
     background-position: center;
 }
 #viserion {
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/VISERION.jpg');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/VISERION.jpg');
     background-size: cover;
     background-position: center;
 }
 #about{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('../images/icefire.png');
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)), url('/images/icefire.png');
     background-size: cover;
     background-position: center;
 }
+/*dire wolves and dragons sections*/
 .wolf, .dragon {
     min-height: 100vh;
     display: flex;
@@ -216,6 +218,7 @@ nav a:visited {
     max-width: 800px;
     text-align: center;
 }
+/*dragons introduction*/
 .divider {
     font-family: "GOT", serif;
     font-size: 30px;
@@ -227,10 +230,90 @@ nav a:visited {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(20,0,0,0.85)), url('../images/fire.png');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(20,0,0,0.85)), url('/images/fire.png');
     background-size: cover;
     background-position: center;
 }
+
+/* flip card wrapper — replaces bare <img class="image"> */
+.card {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.cardinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 10px;
+}
+.card.flipped .cardinner {
+    transform: rotateY(180deg);
+}
+.cardfront,
+.cardback {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cardfront img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.cardback {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 24px;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.96);
+    border: 1px solid rgba(139, 149, 158, 0.25);
+    gap: 14px;
+}
+.cardback .flabel {
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8b959e;
+}
+.cardback .fstatus {
+    font-family: "GOT", serif;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: #e8e6e3;
+}
+.cardback .fstatus.alive {
+    color: #7ecba1;
+}
+.cardback .fstatus.fallen {
+    color: #c47a7a;
+}
+.cardback .fstatus.undead {
+    color: #8ab4d4;
+}
+.cardback .fsummary {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #c5c5c5;
+}
+.cardback .fdivider {
+    width: 40px;
+    height: 1px;
+    background: rgba(139, 149, 158, 0.35);
+}
+
+/* keep old .image working for any img not inside a flip card */
 .image{
     width: 400px;
     height: 400px;
@@ -242,6 +325,7 @@ nav a:visited {
     transform: scale(1.02);
     transition: transform 0.8s ease;
 }
+/*wolf and dragon info design*/
 .wolfinfo {
     flex: 1;
     min-width: 300px;
@@ -263,9 +347,11 @@ nav a:visited {
     line-height: 1.8;
     color: #c5c5c5;
 }
+/*background effects*/
 .intro, .dragon, .divider, #grey-wind, #lady, #nymeria, #summer, #shaggydog, #ghost, #drogon, #rhaegal, #viserion {
     background-attachment: fixed;
 }
+/*footer design*/
 footer {
     background: #0a0a0a;
     padding: 48px 32px;
@@ -277,20 +363,25 @@ footer p {
     font-size: 15px;
     letter-spacing: 1px;
 }
+/*font */
 @font-face {
     font-family: "MyFont";
-    src: url(../Cinzel/Cinzel-VariableFont_wght.ttf);
+    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: "GOT";
-    src: url(../game-of-thrones/Game\ of\ Thrones.ttf);
+    src: url(/game-of-thrones/Game\ of\ Thrones.ttf);
 }
-
+/*for smooth scrolling*/
 html{
     scroll-behavior: smooth;
 }
-
+/*for responsive design*/
 @media (max-width: 1400px) {
+    .card {
+        width: 250px;
+        height: 300px;
+    }
     .image {
         width: 250px;
         height: 300px;
@@ -301,9 +392,23 @@ html{
     .description{
         font-size: 10px;
     }
+    .cardback .flabel {
+        font-size: 0.6rem;
+    }
+    .cardback .fstatus {
+        font-size: 1.1rem;
+    }
+    .cardback .fsummary {
+        font-size: 0.78rem;
+    }
 }
-
+/*for responsive design*/
 @media (max-width: 968px) {
+    .card {
+        width: 250px;
+        height: 300px;
+        order: -1;
+    }
     .image {
         width: 250px;
         height: 300px;
@@ -359,8 +464,22 @@ html{
         order: 1;
         text-align: center;
     }
+    .cardback .flabel {
+        font-size: 0.55rem;
+    }
+    .cardback .fstatus {
+        font-size: 1rem;
+    }
+    .cardback .fsummary {
+        font-size: 0.72rem;
+    }
 }
+/*for responsive design*/
 @media (max-width: 640px) {
+    .card {
+        width: 200px;
+        height: 200px;
+    }
     .content {
         align-items: center;
     }
@@ -401,5 +520,14 @@ html{
         top: 60px;
         width: 200px;
         font-size: 14px;
+    }
+    .cardback .flabel {
+        font-size: 0.5rem;
+    }
+    .cardback .fstatus {
+        font-size: 0.85rem;
+    }
+    .cardback .fsummary {
+        font-size: 0.65rem;
     }
 }
