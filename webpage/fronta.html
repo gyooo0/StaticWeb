@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dire Wolves & Dragons of Westeros</title>
     <link rel="stylesheet" href="front.css">
 </head>
-
 <body>
+    <!-- Header with navigation menu -->
     <header>
         <nav>
             <div class="holder">
@@ -44,6 +43,7 @@
         </nav>
     </header>
 
+    <!-- Introduction section -->
     <section class="intro" id="intro">
         <div class="intro_content">
             <h1>Winter is coming</h1>
@@ -52,27 +52,50 @@
         </div>
     </section>
 
+    <!-- Grey Wind wolf section -->
     <section id="grey-wind" class="wolf">
         <div class="content">
-            <img src="../images/greywind.jpeg" alt="Grey Wind" class="image">
-            <img src="../images/rob.jpg" alt="Robb Stark" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/greywind.jpeg" alt="Grey Wind">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Slain at the Red Wedding alongside Robb Stark. His head was sewn onto Robb's body in a final act of mockery by House Frey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/rob.jpg" alt="Robb Stark">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Murdered at the Red Wedding by House Frey and House Bolton. The King in the North fell betrayed by those who had sworn him loyalty.</p>
+                    </div>
+                </div>
+            </div>
             <div class="wolfinfo">
                 <h2>Grey Wind</h2>
                 <p class="owner">Bonded to Robb Stark</p>
                 <p class="description">
                     Grey Wind was the dire wolf of Robb Stark, the King in the North. Named for his speed and smoke grey
-                    fur,
-                    Grey Wind was the largest and most aggressive of the direwolf litter. He fought alongside Robb in
+                    fur, Grey Wind was the largest and most aggressive of the direwolf litter. He fought alongside Robb in
                     every battle during the War of the Five Kings, becoming a legend on the battlefield. His fierce and
-                    loyal
-                    temperament struck fear into the hearts of enemies. His battle prowess was unmatched among the dire
-                    wolves,
-                    but his fate was sealed at the Red Wedding, where he fell defending his master.
+                    loyal temperament struck fear into the hearts of enemies. His battle prowess was unmatched among the dire
+                    wolves, but his fate was sealed at the Red Wedding, where he fell defending his master.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Lady wolf section -->
     <section id="lady" class="wolf">
         <div class="content">
             <div class="wolfinfo">
@@ -80,41 +103,85 @@
                 <p class="owner">Bonded to Sansa Stark</p>
                 <p class="description">
                     Lady was the dire wolf of Sansa Stark, gentle and beautiful like her owner. With her silver grey fur
-                    and
-                    golden eyes, Lady embodied the grace and nobility expected of a highborn lady. She was the smallest
+                    and golden eyes, Lady embodied the grace and nobility expected of a highborn lady. She was the smallest
                     of the litter and the most trusting, with a gentle temperament reflecting Sansa's own nature.
-                    Tragically,
-                    Lady became the first to fall, executed unjustly for a crime she did not commit, foreshadowing the
-                    hardships
-                    Sansa would endure.
+                    Tragically, Lady became the first to fall, executed unjustly for a crime she did not commit, foreshadowing the
+                    hardships Sansa would endure.
                 </p>
             </div>
-            <img src="../images/lady.jpeg" alt="Lady" class="image">
-            <img src="../images/sansa.jpg" alt="Sansa Stark" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/lady.jpeg" alt="Lady">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">The first direwolf to die. Executed on Queen Cersei's orders after Joffrey's confrontation with Arya on the Kingsroad — punished for a crime she did not commit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/sansa.jpg" alt="Sansa Stark">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">Survived the wars and politics of Westeros. Sansa Stark became Queen in the North, ruling an independent kingdom after the Long Night.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Nymeria wolf section -->
     <section id="nymeria" class="wolf">
         <div class="content">
-            <img src="../images/nymeria.jpeg" alt="Nymeria" class="image">
-            <img src="../images/arya.jpg" alt="Arya Stark" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/nymeria.jpeg" alt="Nymeria">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">Driven away by Arya to save her life, Nymeria formed a massive wolf pack in the Riverlands and roams free to this day — untamed and legendary.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/arya.jpg" alt="Arya Stark">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">The girl with no name became the hero of the Long Night, striking down the Night King. She then sailed west of Westeros to chart unknown lands.</p>
+                    </div>
+                </div>
+            </div>
             <div class="wolfinfo">
                 <h2>Nymeria</h2>
                 <p class="owner">Bonded to Arya Stark</p>
                 <p class="description">
                     Nymeria was named after the legendary warrior queen of the Rhoynar, reflecting Arya's own fierce
                     and independent spirit. With dark grey fur and a wild temperament, she embodied freedom. When Arya
-                    was
-                    forced to drive her away to save her life, Nymeria fled into the wild and became the leader of a
-                    massive
-                    wolf pack in the Riverlands. She remained free and untamed, much like Arya herself, becoming a
-                    legend in
-                    her own right. The bond between them endured across the years, and Nymeria roams free to this day.
+                    was forced to drive her away to save her life, Nymeria fled into the wild and became the leader of a
+                    massive wolf pack in the Riverlands. She remained free and untamed, much like Arya herself, becoming a
+                    legend in her own right. The bond between them endured across the years, and Nymeria roams free to this day.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Summer wolf section -->
     <section id="summer" class="wolf">
         <div class="content">
             <div class="wolfinfo">
@@ -123,39 +190,84 @@
                 <p class="description">
                     Summer was Bran Stark's dire wolf, named for the long summer that was ending when he was found.
                     With silver grey fur and a protective, loyal temperament, Summer became Bran's protector after his
-                    fall.
-                    Through their profound warg bond, Bran could see through Summer's eyes and control his movements.
+                    fall. Through their profound warg bond, Bran could see through Summer's eyes and control his movements.
                     Summer was fiercely protective of Bran, saving his life multiple times. Their bond deepened as
-                    Bran's
-                    powers grew, until Summer sacrificed himself defending Bran from the army of the dead.
+                    Bran's powers grew, until Summer sacrificed himself defending Bran from the army of the dead.
                 </p>
             </div>
-            <img src="../images/summer.jpeg" alt="Summer" class="image">
-            <img src="../images/bran.jpg" alt="Bran Stark" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/summer.jpeg" alt="Summer">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Died defending Bran during the attack on the Three-Eyed Raven's cave. He gave his life so Bran could escape the army of the dead.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/bran.jpg" alt="Bran Stark">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">Became the Three-Eyed Raven and was chosen as King of the Six Kingdoms after the Long Night. Bran the Broken now rules Westeros.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Shaggydog wolf section -->
     <section id="shaggydog" class="wolf">
         <div class="content">
-            <img src="../images/shaggydog.jpg" alt="Shaggydog" class="image">
-            <img src="../images/rickon.jpg" alt="Rickon Stark" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/shaggydog.jpg" alt="Shaggydog">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Slain by the Umbers when Rickon was betrayed and handed over to Ramsay Bolton. His severed head was presented as proof of Rickon's capture.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/rickon.jpg" alt="Rickon Stark">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Shot by Ramsay Bolton's arrow during the Battle of the Bastards while running across the open field toward Jon Snow. The youngest Stark did not survive.</p>
+                    </div>
+                </div>
+            </div>
             <div class="wolfinfo">
                 <h2>Shaggydog</h2>
                 <p class="owner">Bonded to Rickon Stark</p>
                 <p class="description">
                     Shaggydog was the dire wolf of Rickon Stark, the youngest of the Stark children. Named by the
                     young Rickon, Shaggydog had jet black fur and was the most aggressive and unruly of all the dire
-                    wolves,
-                    with an untamed ferocity that reflected his master's wild nature after the trauma of losing his
-                    family.
-                    As Rickon grew more feral in his exile, so too did Shaggydog, becoming nearly impossible for anyone
-                    but
-                    Rickon to control. Their bond was primal and fierce, ending when Shaggydog was slain by the Umbers.
+                    wolves, with an untamed ferocity that reflected his master's wild nature after the trauma of losing his
+                    family. As Rickon grew more feral in his exile, so too did Shaggydog, becoming nearly impossible for anyone
+                    but Rickon to control. Their bond was primal and fierce, ending when Shaggydog was slain by the Umbers.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Ghost wolf section -->
     <section id="ghost" class="wolf">
         <div class="content">
             <div class="wolfinfo">
@@ -165,43 +277,90 @@
                     Ghost was Jon Snow's albino dire wolf, the runt of the litter found separated from his siblings,
                     much like Jon himself as a bastard. With pure white fur and red eyes, Ghost was silent and watchful,
                     moving like a phantom through the snow. He was fiercely loyal to Jon, following him to the Wall and
-                    beyond.
-                    Ghost's uncanny ability to sense danger and his unbreakable bond with Jon made him invaluable. He
-                    was the
-                    last of the dire wolves to survive, embodying the endurance and resilience of House Stark.
+                    beyond. Ghost's uncanny ability to sense danger and his unbreakable bond with Jon made him invaluable. He
+                    was the last of the dire wolves to survive, embodying the endurance and resilience of House Stark.
                 </p>
             </div>
-            <img src="../images/ghost.jpeg" alt="Ghost" class="image">
-            <img src="../images/jon.jpg" alt="Jon Snow" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/ghost.jpeg" alt="Ghost">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">The last surviving direwolf. Ghost journeyed north of the Wall with Jon Snow, where they live free among the Free Folk beyond the reach of southern kings.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/jon.jpg" alt="Jon Snow">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">Exiled beyond the Wall after killing Daenerys Targaryen. Jon Snow — Aegon Targaryen — chose the true north, riding out with Ghost and the Free Folk.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Dragons section divider -->
     <section class="divider" id="dragons">
         <h2>Fire and Blood</h2>
         <p>The Dragons of Daenerys Targaryen</p>
     </section>
 
+    <!-- Drogon dragon section -->
     <section id="drogon" class="dragon">
         <div class="content">
-            <img src="../images/DROGON2.jpg" alt="Drogon" class="image">
-            <img src="../images/daenerys.jpg" alt="Daenerys Targaryen" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/DROGON2.jpg" alt="Drogon">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus alive">Alive</span>
+                        <p class="fsummary">The last living dragon. After carrying Daenerys's body away from King's Landing, Drogon was last seen flying east toward Essos — whereabouts unknown.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/daenerys.jpg" alt="Daenerys Targaryen">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Killed by Jon Snow in the throne room of King's Landing after burning the city. The Mother of Dragons died before she could sit the Iron Throne.</p>
+                    </div>
+                </div>
+            </div>
             <div class="wolfinfo">
                 <h2>Drogon</h2>
                 <p class="owner">Bonded to Daenerys Targaryen</p>
                 <p class="description">
                     Drogon was named after Daenerys's late husband, Khal Drogo, and was the largest and most aggressive
                     of her three dragons. With black scales and red markings, his red-orange flames embodied the raw
-                    power and ferocity of House Targaryen. He was Daenerys's favorite and her personal mount, the one
-                    she
+                    power and ferocity of House Targaryen. He was Daenerys's favorite and her personal mount, the one she
                     rode into battle. Drogon's bond with the Mother of Dragons was the strongest, and he demonstrated
                     intelligence and loyalty beyond that of a mere beast. He was the last dragon seen in Westeros,
-                    carrying
-                    Daenerys's body away after her death.
+                    carrying Daenerys's body away after her death.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Rhaegal dragon section -->
     <section id="rhaegal" class="dragon">
         <div class="content">
             <div class="wolfinfo">
@@ -210,35 +369,78 @@
                 <p class="description">
                     Rhaegal was named in honor of Daenerys's brother, Rhaegar Targaryen, the fallen prince whose legacy
                     haunted the realm. With green and bronze scales that shimmered like emeralds, and yellow-green
-                    flames,
-                    Rhaegal was a sight to behold. He was known for his agility and grace in flight. Though initially
-                    bonded
-                    to Daenerys, Rhaegal was later ridden by Jon Snow during the Great War against the Night King,
-                    symbolizing
-                    Jon's Targaryen heritage. His death at the hands of Euron Greyjoy's scorpion bolts was a devastating
-                    blow
-                    to Daenerys's forces.
+                    flames, Rhaegal was a sight to behold. He was known for his agility and grace in flight. Though initially
+                    bonded to Daenerys, Rhaegal was later ridden by Jon Snow during the Great War against the Night King,
+                    symbolizing Jon's Targaryen heritage. His death at the hands of Euron Greyjoy's scorpion bolts was a devastating
+                    blow to Daenerys's forces.
                 </p>
             </div>
-            <img src="../images/RHAEGAL.jpg" alt="Rhaegal" class="image">
-            <img src="../images/daenerys.jpg" alt="Daenerys Targaryen" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/RHAEGAL.jpg" alt="Rhaegal">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Shot down by Euron Greyjoy's fleet using scorpion bolts near Dragonstone. His death was a devastating ambush that Daenerys never recovered from.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/daenerys.jpg" alt="Daenerys Targaryen">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Killed by Jon Snow in the throne room of King's Landing after burning the city. The Mother of Dragons died before she could sit the Iron Throne.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Viserion dragon section -->
     <section id="viserion" class="dragon">
         <div class="content">
-            <img src="../images/VISERION.jpg" alt="Viserion" class="image">
-            <img src="../images/daenerys.jpg" alt="Daenerys Targaryen" class="image">
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/VISERION.jpg" alt="Viserion">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus undead">Undead — Destroyed</span>
+                        <p class="fsummary">Killed beyond the Wall by the Night King, then resurrected as an ice dragon. He brought down the Wall itself before being destroyed at the Battle of Winterfell.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardinner">
+                    <div class="cardfront">
+                        <img src="../images/daenerys.jpg" alt="Daenerys Targaryen">
+                    </div>
+                    <div class="cardback">
+                        <span class="flabel">Fate</span>
+                        <div class="fdivider"></div>
+                        <span class="fstatus fallen">Fallen</span>
+                        <p class="fsummary">Killed by Jon Snow in the throne room of King's Landing after burning the city. The Mother of Dragons died before she could sit the Iron Throne.</p>
+                    </div>
+                </div>
+            </div>
             <div class="wolfinfo">
                 <h2>Viserion</h2>
                 <p class="owner">Bonded to Daenerys Targaryen</p>
                 <p class="description">
                     Viserion was named after Daenerys's brother Viserys, and bore cream and gold scales that gleamed in
                     the sunlight. He breathed golden flames and was known for his beauty and slightly gentler
-                    temperament
-                    compared to his brothers. Viserion's fate took a dark turn when he was slain beyond the Wall by the
-                    Night King, only to be resurrected as an ice dragon with blue flames that could melt the ancient
-                    Wall
+                    temperament compared to his brothers. Viserion's fate took a dark turn when he was slain beyond the Wall by the
+                    Night King, only to be resurrected as an ice dragon with blue flames that could melt the ancient Wall
                     itself. As the Night King's mount, he became a terrifying weapon against the living, until he was
                     finally destroyed during the Battle of Winterfell.
                 </p>
@@ -246,6 +448,7 @@
         </div>
     </section>
 
+    <!-- About section -->
     <section class="dragon" id="about">
             <div class="content_about">
                 <h2>ABOUT THE WEBSITE</h2>
@@ -262,11 +465,13 @@
             </div>
     </section>
 
+    <!-- Footer with quote and copyright -->
     <footer>
         <p>"Power resides where men believe it resides. It's a trick. A shadow on the wall"</p>
         <p style="margin-top: 1rem; font-size: 0.85rem;">© House Stark & House Targaryen • Ice and Fire</p>
     </footer>
 
+    <!-- script for the burger menu -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="front.js"></script>
 </body>
